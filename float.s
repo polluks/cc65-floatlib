@@ -1,7 +1,7 @@
 
 BINARYFORMAT_CBM_UNPACKED   = 0
 BINARYFORMAT_CBM_PACKED     = 1
-BINARYFORMAT_IEEE755        = 2 ; TODO
+BINARYFORMAT_IEEE754        = 2 ; TODO
 
 ; BEWARE: also change in float.h
 ;BINARYFORMAT = BINARYFORMAT_CBM_UNPACKED
@@ -728,4 +728,3 @@ __fatan2:
                         ldx #>__f_1pi2
                         jsr __float_float_to_fac
                         jmp __float_ret2
-        
